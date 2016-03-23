@@ -16,12 +16,7 @@ import org.palladiosimulator.pcm.resourceenvironment.ResourceenvironmentPackage;
 import org.palladiosimulator.probeframework.probes.EventProbeList;
 import org.palladiosimulator.probeframework.probes.Probe;
 import org.palladiosimulator.probeframework.probes.TriggeredProbe;
-import org.palladiosimulator.simulizar.runtimestate.CostModel;
 import org.palladiosimulator.simulizar.runtimestate.SimuLizarRuntimeState;
-import org.palladiosimulator.simulizar.simulationevents.AggregatedContainerCostProbe;
-import org.palladiosimulator.simulizar.simulationevents.ContainerCostProbe;
-import org.palladiosimulator.simulizar.simulationevents.PeriodicallyTriggeredContainerEntity;
-import org.palladiosimulator.simulizar.simulationevents.PeriodicallyTriggeredCostModelEntity;
 import org.palladiosimulator.simulizar.syncer.AbstractResourceEnvironmentObserver;
 import org.palladiosimulator.simulizar.utils.MonitorRepositoryUtil;
 

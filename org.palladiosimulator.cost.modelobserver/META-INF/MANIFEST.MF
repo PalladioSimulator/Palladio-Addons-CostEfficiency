@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Modelobserver
+Bundle-Name: Cost-Efficiency SimuLizar Integration
 Bundle-SymbolicName: org.palladiosimulator.cost.modelobserver;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: org.palladiosimulator.cost.modelobserver.Activator
@@ -12,8 +12,9 @@ Require-Bundle: org.palladiosimulator.simulizar;bundle-version="2.0.3",
  de.uka.ipd.sdq.simucomframework;bundle-version="2.0.1",
  org.palladiosimulator.mdsdprofiles.api;bundle-version="1.0.0",
  org.modelversioning.emfprofile;bundle-version="1.1.0",
- org.palladiosimulator.analyzer.workflow,
+ org.palladiosimulator.analyzer.workflow;bundle-version="1.0.0",
  org.palladiosimulator.simulizar.runtimemeasurement;bundle-version="2.0.0",
  org.palladiosimulator.pcm.edp2.measuringpoint;bundle-version="1.0.0",
- de.uka.ipd.sdq.simulation,
- de.uka.ipd.sdq.simulation.abstractsimengine
+ de.uka.ipd.sdq.simulation;bundle-version="1.0.0",
+ de.uka.ipd.sdq.simulation.abstractsimengine;bundle-version="1.0.0"
+Bundle-Vendor: palladiosimulator.org
