@@ -7,7 +7,7 @@ Bundle-Activator: org.palladiosimulator.cost.modelobserver.Activator
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Export-Package: org.palladiosimulator.cost.modelobserver
-Require-Bundle: org.palladiosimulator.simulizar;bundle-version="2.0.3",
+Require-Bundle: org.palladiosimulator.simulizar;bundle-version="2.0.4",
  org.palladiosimulator.probeframework;bundle-version="2.0.1",
  de.uka.ipd.sdq.simucomframework;bundle-version="2.0.1",
  org.palladiosimulator.mdsdprofiles.api;bundle-version="1.0.0",
