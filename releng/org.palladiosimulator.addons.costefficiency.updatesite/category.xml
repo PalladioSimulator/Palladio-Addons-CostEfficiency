@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+	<feature id="org.palladiosimulator.cost.feature">
+	   <category name="org.palladiosimulator.addons.category"/>
+	</feature>
+	<feature id="org.palladiosimulator.cost.feature.source">
+	   <category name="org.palladiosimulator.addons.source.category"/>
+	</feature>
+	<category-def name="org.palladiosimulator.addons.category" label="Palladio Bench Addons">
+	   <description>
+	      Palladio Bench Addons
+	   </description>
+	  </category-def>
+	  <category-def name="org.palladiosimulator.addons.source.category" label="Palladio Bench Addons Source">
+	     <description>
+	        Palladio Bench Addons Source
+	     </description>
+	  </category-def>
+</site>

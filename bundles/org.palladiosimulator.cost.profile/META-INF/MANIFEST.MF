@@ -6,3 +6,5 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: palladiosimulator.org
 Require-Bundle: org.modelversioning.emfprofile;bundle-version="1.1.0",
  org.modelversioning.emfprofile.registry;bundle-version="1.0.0"
+Automatic-Module-Name: org.palladiosimulator.cost.profile
+Bundle-RequiredExecutionEnvironment: JavaSE-11

@@ -1,0 +1,6 @@
+bin/
+*.class
+.launch/
+*.jar
+xtend-gen/
+target/
