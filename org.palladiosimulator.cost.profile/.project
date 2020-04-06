@@ -17,7 +17,6 @@
 		</buildCommand>
 	</buildSpec>
 	<natures>
-	    <nature>org.modelversioning.emfprofile.project.nature</nature>
 		<nature>org.eclipse.pde.PluginNature</nature>
 	</natures>
 </projectDescription>

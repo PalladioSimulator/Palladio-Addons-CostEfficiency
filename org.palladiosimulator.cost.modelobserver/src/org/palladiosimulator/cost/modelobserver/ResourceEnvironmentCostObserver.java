@@ -11,6 +11,7 @@ import org.palladiosimulator.mdsdprofiles.api.StereotypeAPI;
 import org.palladiosimulator.mdsdprofiles.notifier.MDSDProfilesNotifier;
 import org.palladiosimulator.monitorrepository.MeasurementSpecification;
 import org.palladiosimulator.monitorrepository.MonitorRepository;
+import org.palladiosimulator.monitorrepository.MonitorRepositoryPackage;
 import org.palladiosimulator.pcm.resourceenvironment.ResourceContainer;
 import org.palladiosimulator.pcm.resourceenvironment.ResourceenvironmentPackage;
 import org.palladiosimulator.probeframework.probes.EventProbeList;
@@ -94,7 +95,8 @@ public class ResourceEnvironmentCostObserver extends AbstractResourceEnvironment
     @Override
     public void initialize(final AbstractSimuLizarRuntimeState runtimeState) {
         super.initialize(runtimeState);
-        this.monitorRepository = runtimeState.getModelAccess().getMonitorRepositoryModel();
+		this.monitorRepository = runtimeState.getPCMPartitionManager()
+				.findModel(MonitorRepositoryPackage.eINSTANCE.getMonitorRepository());
 
         this.costModel = new CostModel();
         this.initPeriodicCostModelCalculator();

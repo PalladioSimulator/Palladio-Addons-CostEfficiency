@@ -4,7 +4,7 @@ Bundle-Name: Cost-Efficiency SimuLizar Integration
 Bundle-SymbolicName: org.palladiosimulator.cost.modelobserver;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: org.palladiosimulator.cost.modelobserver.Activator
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Bundle-ActivationPolicy: lazy
 Export-Package: org.palladiosimulator.cost.modelobserver
 Require-Bundle: org.palladiosimulator.simulizar;bundle-version="2.0.4",
@@ -19,3 +19,4 @@ Require-Bundle: org.palladiosimulator.simulizar;bundle-version="2.0.4",
  de.uka.ipd.sdq.simulation.abstractsimengine;bundle-version="1.0.0",
  de.uka.ipd.sdq.scheduler;bundle-version="1.0.0"
 Bundle-Vendor: palladiosimulator.org
+Automatic-Module-Name: org.palladiosimulator.cost.modelobserver

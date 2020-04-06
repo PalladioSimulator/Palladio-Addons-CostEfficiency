@@ -63,7 +63,7 @@ public class PeriodicallyTriggeredContainerEntity extends PeriodicallyTriggeredS
             LOGGER.info(stringBuilder.toString());
         }
 
-        this.costModel.addCostTuple(this.resourceContainer.getId(), timestamp, new Double(this.containerPrice));
+        this.costModel.addCostTuple(this.resourceContainer.getId(), timestamp, Double.valueOf(this.containerPrice));
     }
 
     @Override
