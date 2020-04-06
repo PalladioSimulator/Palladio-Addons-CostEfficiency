@@ -37,8 +37,9 @@ public class ResourceEnvironmentCostObserver extends AbstractResourceEnvironment
     private void removeSimulatedResource(final ResourceContainer resourceContainer) {
         final PeriodicallyTriggeredContainerEntity triggeredEntity = this.periodicallyTriggeredContainerEntities
                 .get(resourceContainer.getId());
-        if (triggeredEntity == null)
-            return;
+        if (triggeredEntity == null) {
+        	return;        	
+        }
         triggeredEntity.removeEvent();
         this.periodicallyTriggeredContainerEntities.remove(resourceContainer.getId());
     }
