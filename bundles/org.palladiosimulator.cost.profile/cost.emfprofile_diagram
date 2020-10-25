@@ -13,7 +13,7 @@
         <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       </eStructuralFeatures>
       <extensions xmi:type="emfprofile:Extension" xmi:id="_ytsIkH5vEeWkMatJbqONig">
-        <target xmi:type="ecore:EClass" href="http://palladiosimulator.org/PalladioComponentModel/5.1#//resourceenvironment/ResourceContainer"/>
+        <target xmi:type="ecore:EClass" href="http://palladiosimulator.org/PalladioComponentModel/5.2#//resourceenvironment/ResourceContainer"/>
       </extensions>
     </eClassifiers>
     <eClassifiers xmi:type="emfprofile:Stereotype" xmi:id="_3lWbEH5vEeWkMatJbqONig" name="CostReport">
@@ -25,7 +25,7 @@
         <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       </eStructuralFeatures>
       <extensions xmi:type="emfprofile:Extension" xmi:id="_R7S0EH5wEeWkMatJbqONig" upperBound="1">
-        <target xmi:type="ecore:EClass" href="http://palladiosimulator.org/PalladioComponentModel/5.1#//resourceenvironment/ResourceEnvironment"/>
+        <target xmi:type="ecore:EClass" href="http://palladiosimulator.org/PalladioComponentModel/5.2#//resourceenvironment/ResourceEnvironment"/>
       </extensions>
     </eClassifiers>
   </emfprofile:Profile>
@@ -45,7 +45,7 @@
       </children>
       <styles xmi:type="notation:DescriptionStyle" xmi:id="_f1Zz8X5vEeWkMatJbqONig"/>
       <styles xmi:type="notation:FontStyle" xmi:id="_f1Zz8n5vEeWkMatJbqONig" fontName=".SF NS Text"/>
-      <element xmi:type="ecore:EClass" href="http://palladiosimulator.org/PalladioComponentModel/5.1#//resourceenvironment/ResourceEnvironment"/>
+      <element xmi:type="ecore:EClass" href="http://palladiosimulator.org/PalladioComponentModel/5.2#//resourceenvironment/ResourceEnvironment"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_f1Zz835vEeWkMatJbqONig" x="112" y="104"/>
     </children>
     <children xmi:type="notation:Node" xmi:id="_jIpGUH5vEeWkMatJbqONig" type="2002">
@@ -63,7 +63,7 @@
       </children>
       <styles xmi:type="notation:DescriptionStyle" xmi:id="_jIpGUX5vEeWkMatJbqONig"/>
       <styles xmi:type="notation:FontStyle" xmi:id="_jIpGUn5vEeWkMatJbqONig" fontName=".SF NS Text"/>
-      <element xmi:type="ecore:EClass" href="http://palladiosimulator.org/PalladioComponentModel/5.1#//resourceenvironment/ResourceContainer"/>
+      <element xmi:type="ecore:EClass" href="http://palladiosimulator.org/PalladioComponentModel/5.2#//resourceenvironment/ResourceContainer"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jIpGU35vEeWkMatJbqONig" x="264" y="104"/>
     </children>
     <children xmi:type="notation:Node" xmi:id="_lqNEIH5vEeWkMatJbqONig" type="2006" element="_lqKA0H5vEeWkMatJbqONig">
