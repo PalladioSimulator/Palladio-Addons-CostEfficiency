@@ -18,7 +18,7 @@ import org.palladiosimulator.probeframework.probes.EventProbeList;
 import org.palladiosimulator.probeframework.probes.Probe;
 import org.palladiosimulator.probeframework.probes.TriggeredProbe;
 import org.palladiosimulator.simulizar.modelobserver.AbstractResourceEnvironmentObserver;
-import org.palladiosimulator.simulizar.runtimestate.AbstractSimuLizarRuntimeState;
+import org.palladiosimulator.simulizar.runtimestate.SimuLizarRuntimeState;
 import org.palladiosimulator.simulizar.utils.MonitorRepositoryUtil;
 
 import de.uka.ipd.sdq.simucomframework.model.SimuComModel;
@@ -94,7 +94,7 @@ public class ResourceEnvironmentCostObserver extends AbstractResourceEnvironment
     }
 
     @Override
-    public void initialize(final AbstractSimuLizarRuntimeState runtimeState) {
+    public void initialize(final SimuLizarRuntimeState runtimeState) {
         super.initialize(runtimeState);
 		this.monitorRepository = runtimeState.getPCMPartitionManager()
 				.findModel(MonitorRepositoryPackage.eINSTANCE.getMonitorRepository());
