@@ -7,7 +7,11 @@ import org.palladiosimulator.mdsdprofiles.api.StereotypeAPI;
 import org.palladiosimulator.pcm.resourceenvironment.ResourceContainer;
 import org.palladiosimulator.simulizar.simulationevents.PeriodicallyTriggeredSimulationEntity;
 
-import de.uka.ipd.sdq.simucomframework.model.SimuComModel;
+import dagger.assisted.Assisted;
+import dagger.assisted.AssistedFactory;
+import dagger.assisted.AssistedInject;
+import de.uka.ipd.sdq.simulation.abstractsimengine.ISimEngineFactory;
+import de.uka.ipd.sdq.simulation.abstractsimengine.ISimulationTimeProvider;
 
 /**
  * An entity that can trigger periodic events with an attached container.
@@ -17,6 +21,10 @@ import de.uka.ipd.sdq.simucomframework.model.SimuComModel;
  */
 public class PeriodicallyTriggeredContainerEntity extends PeriodicallyTriggeredSimulationEntity
         implements IAbstractObservable<IAbstractPeriodicContainerListener> {
+    @AssistedFactory
+    public static interface Factory {
+        PeriodicallyTriggeredContainerEntity create(final ResourceContainer resourceContainer);
+    }
 
     private static final Logger LOGGER = Logger.getLogger(PeriodicallyTriggeredSimulationEntity.class);
 
@@ -26,9 +34,14 @@ public class PeriodicallyTriggeredContainerEntity extends PeriodicallyTriggeredS
     private final String unit;
     private final AbstractObservable<IAbstractPeriodicContainerListener> observableDelegate;
 
-    public PeriodicallyTriggeredContainerEntity(final SimuComModel model, final CostModel costModel,
-            final ResourceContainer resourceContainer) {
-        super(model, 0.0, getDelay(resourceContainer));
+    private final ISimulationTimeProvider timeProvider;
+
+    @AssistedInject
+    public PeriodicallyTriggeredContainerEntity(ISimEngineFactory simFactory, 
+            final ISimulationTimeProvider timeProvider, final CostModel costModel,
+            @Assisted final ResourceContainer resourceContainer) {
+        super(simFactory, 0.0, getDelay(resourceContainer));
+        this.timeProvider = timeProvider;
 
         this.containerPrice = StereotypeAPI.getTaggedValue(resourceContainer, "amount", "Price");
         this.unit = StereotypeAPI.getTaggedValue(resourceContainer, "unit", "Price");
@@ -46,10 +59,11 @@ public class PeriodicallyTriggeredContainerEntity extends PeriodicallyTriggeredS
 
         return StereotypeAPI.getTaggedValue(resourceContainer, "interval", "Price");
     }
+    
 
     @Override
     protected void triggerInternal() {
-        final Double timestamp = this.getModel().getSimulationControl().getCurrentSimulationTime();
+        final Double timestamp = timeProvider.getCurrentSimulationTime();
 
         if (LOGGER.isInfoEnabled()) {
             final StringBuilder stringBuilder = new StringBuilder();
@@ -75,9 +89,5 @@ public class PeriodicallyTriggeredContainerEntity extends PeriodicallyTriggeredS
     public void removeObserver(final IAbstractPeriodicContainerListener observer) {
         this.observableDelegate.removeObserver(observer);
     }
-
-    @Override
-    public void removeEvent() {
-        super.removeEvent();
-    }
+    
 }

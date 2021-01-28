@@ -4,3 +4,4 @@ bin/
 *.jar
 xtend-gen/
 target/
+src-gen/

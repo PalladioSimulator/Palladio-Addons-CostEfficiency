@@ -7,7 +7,8 @@
 		</location>
 		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit" filter="nightly" refresh="true">
 			<unit id="org.palladiosimulator.simulizar.feature.feature.group" version="tbd"/>
-			<repository location="https://updatesite.palladio-simulator.com/palladio-analyzer-simulizar/nightly"/>
+			<!--<repository location="https://updatesite.palladio-simulator.com/palladio-analyzer-simulizar/nightly"/>-->
+			<repository location="https://updatesite.palladio-simulator.com/palladio-analyzer-simulizar/branches/simulizar-136-1"/>
 		</location>
 
 		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit" filter="release" refresh="true">
@@ -253,11 +254,11 @@
 		</location>
 
 		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit" filter="nightly" refresh="true">
-			<unit id="com.google.auto.factory-annotations.feature.feature.group" version="1.0.0"/>
+			<unit id="com.google.dagger.feature.feature.group" version="2.31"/>>
 			<repository location="https://updatesite.mdsd.tools/thirdparty-library/nightly"/>
 		</location>
-		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit" filter="release" refresh="true">
-			<unit id="com.google.auto.factory-annotations.feature.feature.group" version="1.0.0"/>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit" filter="release">
+			<unit id="com.google.dagger.feature.feature.group" version="2.31"/>
 			<repository location="https://updatesite.mdsd.tools/thirdparty-library/releases/latest/"/>
 		</location>
 
