@@ -7,8 +7,7 @@
 		</location>
 		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit" filter="nightly" refresh="true">
 			<unit id="org.palladiosimulator.simulizar.feature.feature.group" version="tbd"/>
-			<!--<repository location="https://updatesite.palladio-simulator.com/palladio-analyzer-simulizar/nightly"/>-->
-			<repository location="https://updatesite.palladio-simulator.com/palladio-analyzer-simulizar/branches/simulizar-136-1"/>
+			<repository location="https://updatesite.palladio-simulator.com/palladio-analyzer-simulizar/nightly"/>
 		</location>
 
 		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit" filter="release" refresh="true">
