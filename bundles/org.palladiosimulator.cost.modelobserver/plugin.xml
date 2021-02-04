@@ -2,10 +2,9 @@
 <?eclipse version="3.4"?>
 <plugin>
    <extension
-         point="org.palladiosimulator.simulizar.modelobserver">
-      <modelObserver
-            modelObserver="org.palladiosimulator.cost.modelobserver.ResourceEnvironmentCostObserver"
-            >
-      </modelObserver>
+         point="org.palladiosimulator.simulizar.extension.factory">
+      <component
+            factory="org.palladiosimulator.cost.modelobserver.CostEfficiencyExtensionComponent$EclipseFactory">
+      </component>
    </extension>
 </plugin>

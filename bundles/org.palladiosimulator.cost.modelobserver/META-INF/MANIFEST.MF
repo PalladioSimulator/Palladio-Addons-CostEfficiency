@@ -17,6 +17,11 @@ Require-Bundle: org.palladiosimulator.simulizar;bundle-version="2.0.4",
  org.palladiosimulator.pcm.edp2.measuringpoint;bundle-version="1.0.0",
  de.uka.ipd.sdq.simulation;bundle-version="1.0.0",
  de.uka.ipd.sdq.simulation.abstractsimengine;bundle-version="1.0.0",
- de.uka.ipd.sdq.scheduler;bundle-version="1.0.0"
+ de.uka.ipd.sdq.scheduler;bundle-version="1.0.0",
+ de.uka.ipd.sdq.workflow.mdsd;bundle-version="4.3.0"
 Bundle-Vendor: palladiosimulator.org
 Automatic-Module-Name: org.palladiosimulator.cost.modelobserver
+Import-Package: dagger;version="2.31.0",
+ dagger.assisted;version="2.31.0",
+ dagger.internal;version="2.31.0",
+ javax.inject
