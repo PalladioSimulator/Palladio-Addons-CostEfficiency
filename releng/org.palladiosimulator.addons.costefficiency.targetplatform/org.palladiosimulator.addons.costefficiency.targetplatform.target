@@ -227,6 +227,11 @@
 			<repository location="http://download.eclipse.org/modeling/emft/henshin/updates/1.6.0/"/>
 		</location>
 		
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit">
+			<unit id="org.eclipse.papyrus.infra.gmfdiag.tooling.runtime" version="0.0.0"/>
+			<repository location="http://download.eclipse.org/modeling/mdt/papyrus/updates/releases/2021-09/"/>
+		</location>
+		
 		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="false" type="InstallableUnit" refresh="true">
 			<unit id="org.eclipse.gmf.tooling.runtime.feature.group" version="tbd"/>
 			<repository location="http://download.eclipse.org/modeling/gmp/gmf-tooling/updates/releases-3.3.1a/"/>
