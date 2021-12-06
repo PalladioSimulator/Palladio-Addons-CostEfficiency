@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Cost-Efficiency Modeling Annotations
 Bundle-SymbolicName: org.palladiosimulator.cost.profile;singleton:=true
-Bundle-Version: 5.0.0.qualifier
+Bundle-Version: 5.1.0.qualifier
 Bundle-Vendor: palladiosimulator.org
 Require-Bundle: org.modelversioning.emfprofile;bundle-version="1.1.0",
  org.modelversioning.emfprofile.registry;bundle-version="1.0.0"
