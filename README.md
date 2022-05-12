@@ -1,4 +1,11 @@
 # Palladio Addons CostEfficiency
+
+***Archived due to:***
+* *No active development since 2016*
+* *No dependencies to other projects*
+* *Not used by others in this organization*
+
+
 tdb
 
 ## Documentation
