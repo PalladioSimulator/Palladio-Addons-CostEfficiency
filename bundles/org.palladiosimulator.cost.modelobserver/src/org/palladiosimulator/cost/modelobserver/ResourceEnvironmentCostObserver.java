@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 import javax.inject.Inject;
 
 import org.eclipse.emf.common.notify.Notification;
-import org.palladiosimulator.analyzer.workflow.blackboard.PCMResourceSetPartition;
+import org.palladiosimulator.analyzer.workflow.core.blackboard.PCMResourceSetPartition;
 import org.palladiosimulator.cost.modelobserver.PeriodicallyTriggeredCostModelEntity.Factory;
 import org.palladiosimulator.mdsdprofiles.api.StereotypeAPI;
 import org.palladiosimulator.mdsdprofiles.notifier.MDSDProfilesNotifier;
@@ -27,10 +27,10 @@ import org.palladiosimulator.probeframework.probes.Probe;
 import org.palladiosimulator.probeframework.probes.TriggeredProbe;
 import org.palladiosimulator.simulizar.modelobserver.AbstractResourceEnvironmentObserver;
 import org.palladiosimulator.simulizar.utils.MonitorRepositoryUtil;
-import org.palladiosimulator.simulizar.utils.PCMPartitionManager.Global;
+import org.palladiosimulator.simulizar.core.utils.PCMPartitionManager.Global;
 
-import de.uka.ipd.sdq.simucomframework.model.SimuComModel;
-import de.uka.ipd.sdq.simucomframework.probes.TakeCurrentSimulationTimeProbe;
+import de.uka.ipd.sdq.simucomframework.core.model.SimuComModel;
+import de.uka.ipd.sdq.simucomframework.core.probes.TakeCurrentSimulationTimeProbe;
 import de.uka.ipd.sdq.simulation.abstractsimengine.ISimulationControl;
 import de.uka.ipd.sdq.simulation.abstractsimengine.ISimulationTimeProvider;
 

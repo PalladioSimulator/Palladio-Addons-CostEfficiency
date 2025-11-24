@@ -6,9 +6,9 @@ import org.palladiosimulator.simulizar.di.component.core.SimuLizarRuntimeCompone
 import org.palladiosimulator.simulizar.di.component.dependency.QUALComponent;
 import org.palladiosimulator.simulizar.di.component.dependency.SimEngineComponent;
 import org.palladiosimulator.simulizar.di.component.dependency.SimuComFrameworkComponent;
-import org.palladiosimulator.simulizar.di.extension.ExtensionComponent;
+import org.palladiosimulator.simulizar.di.base.extension.ExtensionComponent;
 import org.palladiosimulator.simulizar.modelobserver.IModelObserver;
-import org.palladiosimulator.simulizar.scopes.RuntimeExtensionScope;
+import org.palladiosimulator.simulizar.di.base.scopes.RuntimeExtensionScope;
 
 import dagger.Binds;
 import dagger.Component;
