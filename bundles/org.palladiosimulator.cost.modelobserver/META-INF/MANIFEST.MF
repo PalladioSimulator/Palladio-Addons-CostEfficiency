@@ -18,10 +18,11 @@ Require-Bundle: org.palladiosimulator.simulizar,
  de.uka.ipd.sdq.simulation,
  de.uka.ipd.sdq.simulation.abstractsimengine,
  de.uka.ipd.sdq.scheduler,
- de.uka.ipd.sdq.workflow.mdsd
+ de.uka.ipd.sdq.workflow.mdsd,
+ jakarta.inject.jakarta.inject-api;bundle-version="[2.0.0,3.0.0)"
 Bundle-Vendor: palladiosimulator.org
 Automatic-Module-Name: org.palladiosimulator.cost.modelobserver
-Import-Package: dagger;version="2.31.0",
- dagger.assisted;version="2.31.0",
- dagger.internal;version="2.31.0",
- javax.inject
+Import-Package: dagger;version="[2.60.0,3.0.0)",
+ dagger.assisted;version="[2.60.0,3.0.0)",
+ dagger.internal;version="[2.60.0,3.0.0)",
+ javax.inject;version="[1.0.0,2.0.0)"
