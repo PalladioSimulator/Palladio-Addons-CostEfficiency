@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.stream.Stream;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.palladiosimulator.analyzer.workflow.core.blackboard.PCMResourceSetPartition;
