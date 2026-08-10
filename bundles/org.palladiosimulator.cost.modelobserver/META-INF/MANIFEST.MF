@@ -4,7 +4,7 @@ Bundle-Name: Cost-Efficiency SimuLizar Integration
 Bundle-SymbolicName: org.palladiosimulator.cost.modelobserver;singleton:=true
 Bundle-Version: 6.0.0.qualifier
 Bundle-Activator: org.palladiosimulator.cost.modelobserver.Activator
-Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-RequiredExecutionEnvironment: JavaSE-21
 Bundle-ActivationPolicy: lazy
 Export-Package: org.palladiosimulator.cost.modelobserver
 Require-Bundle: org.palladiosimulator.simulizar,
