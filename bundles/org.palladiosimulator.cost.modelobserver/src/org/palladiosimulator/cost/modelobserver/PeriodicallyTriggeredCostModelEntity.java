@@ -15,7 +15,8 @@ public class PeriodicallyTriggeredCostModelEntity extends PeriodicallyTriggeredS
         implements IAbstractObservable<IAbstractPeriodicContainerListener> {
     @AssistedFactory
     public static interface Factory {
-        PeriodicallyTriggeredCostModelEntity create(final double firstOccurrence, final double delay);
+        PeriodicallyTriggeredCostModelEntity create(@Assisted("firstOccurrence") final double firstOccurrence,
+                @Assisted("delay") final double delay);
     }
 
     private static final Logger LOGGER = Logger.getLogger(PeriodicallyTriggeredSimulationEntity.class);
@@ -28,7 +29,8 @@ public class PeriodicallyTriggeredCostModelEntity extends PeriodicallyTriggeredS
     @AssistedInject
     public PeriodicallyTriggeredCostModelEntity(ISimEngineFactory simFactory, 
             final ISimulationTimeProvider timeProvider, final CostModel costModel,
-            @Assisted final double firstOccurrence, @Assisted final double delay) {
+            @Assisted("firstOccurrence") final double firstOccurrence,
+            @Assisted("delay") final double delay) {
         super(simFactory, firstOccurrence, delay);
         this.timeProvider = timeProvider;
         this.costModel = costModel;
